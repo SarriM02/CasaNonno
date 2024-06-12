@@ -3,8 +3,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
@@ -13,4 +14,19 @@ body {
 
 h1 {
     font-size: 3em;
+}
+
+#message {
+    font-size: 8em; /* Aumenta la dimensione del font */
+}
+
+.animated-message {
+    color: #871f87;
+    animation: blinking 3s infinite;
+}
+
+@keyframes blinking {
+    0% { opacity: 1; }
+    20% { opacity: 0.6; }
+    100% { opacity: 1; }
 }

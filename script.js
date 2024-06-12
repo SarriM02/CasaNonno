@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const day = today.getDate();
 
     if (day % 2 === 0) {
-        messageElement.textContent = "MARCO";
+        messageElement.innerHTML = "MARCO";
     } else {
-        messageElement.textContent = "COSIMO";
+        messageElement.innerHTML = "COSIMO";
     }
+    messageElement.classList.add('animated-message');
 });
